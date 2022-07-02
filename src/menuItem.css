@@ -1,0 +1,107 @@
+/*
+============
+menuItem
+============
+*/
+
+.menuItem {
+  max-width: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-div {
+  max-width: 400px;
+  height: 200px;
+  border: 4px solid var(--clr-gold);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/*
+============
+content-div
+============
+*/
+
+.title-price-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-price-div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dotted var(--clr-paragraph);
+}
+
+.title-price-div h3 {
+  color: var(--clr-heading);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  align-self: center;
+  margin: 0px;
+}
+
+.title-price-div p {
+  color: var(--clr-gold);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0px;
+  align-self: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--clr-paragraph);
+}
+
+/*
+============
+tablet layout
+============
+*/
+
+@media (min-width: 760px) {
+  .menuItem {
+    max-width: 650px;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .image-div {
+    width: 225px;
+    height: 150px;
+  }
+
+  .content-div {
+    max-width: 400px;
+  }
+
+  .menuItem {
+    display: flex;
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-div {
+    max-width: 300px;
+    max-height: 158px;
+  }
+
+  .menuItem {
+    max-width: 550px;
+    display: flex;
+    column-gap: 1rem;
+  }
+}
